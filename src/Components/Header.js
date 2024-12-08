@@ -1,64 +1,34 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 const Header = () => {
   return (
-    <>
-    {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
-      <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-        <Container fluid>
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                Offcanvas
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown
-                  title="Dropdown"
-                  id={`offcanvasNavbarDropdown-expand-${expand}`}
-                >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar>
-    ))}
-  </>
+    <Navbar expand="lg" className="bg-body-tertiary">
+    <Container>
+      <Navbar.Brand href="#home">Agencia de viajes</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Inicio</Nav.Link>
+          <Nav.Link href="#link">Destinos</Nav.Link>
+          <NavDropdown title="Paquetes de viajes" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Nuestros paquetes</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              Separa tu paquete
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Personaliza tu paquete</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">
+              Reporta un problema
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
   )
 }
 
