@@ -1,0 +1,11 @@
+.bg-body-tertiary {
+    background-color: #fd640c !important;
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+  }
