@@ -17,14 +17,14 @@ const IndividualIntervalsExample = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
-          <img className="d-block w-100" src={image2} alt="Segunda imagen" />
+          <img className="d-block w-100" src={image1} alt="Segunda imagen" />
           <Carousel.Caption>
             <h3>Segunda imagen</h3>
             <p>Un viaje inolvidable.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={image3} alt="Tercera imagen" />
+          <img className="d-block w-100" src={image1} alt="Tercera imagen" />
           <Carousel.Caption>
             <h3>Tercera imagen</h3>
             <p>Explora nuevas aventuras.</p>

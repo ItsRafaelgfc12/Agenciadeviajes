@@ -1,10 +1,15 @@
+import React from 'react';
+import './Home.css';
+import CarouselComponent from './CarouselComponent';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-const Content = () => {
+const Home = () => {
   return (
-    <Row xs={1} md={2} className="g-4">
+    <div>
+      <CarouselComponent />
+      <Row xs={1} md={2} className="g-4">
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col key={idx}>
           <Card>
@@ -21,7 +26,8 @@ const Content = () => {
         </Col>
       ))}
     </Row>
-  )
+    </div>
+  );
 }
 
-export default Content
+export default Home;
