@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const PersonalizarPaquete = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default PersonalizarPaquete
-=======
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -105,4 +92,3 @@ function PersonalizarPaquete() {
 }
 
 export default PersonalizarPaquete;
->>>>>>> 7d074753e60c5d67686af8a9941df828fb5b3ac2

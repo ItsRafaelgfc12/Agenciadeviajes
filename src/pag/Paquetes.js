@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const Paquetes = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Paquetes
-=======
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -145,4 +132,3 @@ function Paquetes() {
 }
 
 export default Paquetes;
->>>>>>> 7d074753e60c5d67686af8a9941df828fb5b3ac2

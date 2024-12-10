@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const SepararPaquete = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default SepararPaquete
-=======
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -125,4 +112,3 @@ function SepararPaquete() {
 }
 
 export default SepararPaquete;
->>>>>>> 7d074753e60c5d67686af8a9941df828fb5b3ac2
